@@ -49,6 +49,7 @@ export class  DashboardPage {
         if(evaluate.status === 2){
           this.concluded.push(evaluate);
         }else if(new Date(evaluate.audit_due_date) >= new Date()){
+
           this.pending.push(evaluate);
         } else {
           this.delayed.push(evaluate);
